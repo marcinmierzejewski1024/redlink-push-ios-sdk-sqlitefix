@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   }
   s.ios.vendored_frameworks = 'Framework/Redlink.xcframework'
   s.source          = { :git => 'https://github.com/vercomsa/redlink-push-ios-sdk.git', :tag => s.version.to_s }
-  s.dependency 'SQLite.swift', '0.15.3'
+  s.dependency 'SQLite.swift', '0.13.3'
   s.pod_target_xcconfig = {
     'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
   }  
