@@ -8,11 +8,12 @@ let package = Package(
     products: [
         .library(
             name: "Redlink",
+            type: .dynamic, // <- dynamiczne linkowanie SDK SQLite
             targets: ["RedlinkSPMTarget"]
         ),
     ],
     dependencies: [
-        .package(name: "SQLite.swift", url: "https://github.com/stephencelis/SQLite.swift.git", from: "0.13.3")
+        .package(name: "SQLite.swift", url: "https://github.com/stephencelis/SQLite.swift.git", from: "0.15.3")
     ],
     targets: [
         .target(
